@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enes Ray</title>
+  <meta charset="utf-8">
+
+  <!-- Logo -->
+  <link rel="shortcut icon" href="dosyalar/resim/bilgisayar.ico">
+
+  <!-- CSS dosyasına bağlantı -->
+  <link rel="stylesheet" href="dosyalar/main.css"/>
+
+  <!-- Bootstrap ve yazı fontu-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<!-- kullanıcı tarafından ölçeklenebilirlik, insanların mobil cihazlarda yakınlaştırma yapmasına izin vermez-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+</head>
+<!-- İlk yazı tipi başarısız olursa yedek yazı tipi -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat" rel="stylesheet" type="text/css">
+
+
+<div id="myNav" class="overlay">
+
+  <!-- İçerik -->
+  <div class="overlay-content">
+    <a href="#bilgi" onclick="closer()">Bilgi</a>
+    <a href="#yetenek" onclick="closer()">Yetenek</a>
+    <a href="#iletisim" onclick="closer()">İletişim</a>
+  </div>
+
+</div>
+
+<body>
+
+<!-- BAŞLIK -->
+<div class="header vertical-center">
+
+  <a id="hamburger-icon" href="#" title="Menu" onclick="openNav()" class="">
+    <span class="line line-1" style="background: white;"></span>
+    <span class="line line-2" style="background: white;"></span>
+    <span class="line line-3" style="background: white;"></span>
+  </a>
+
+  <div class="container-fluid">
+    <div class="center">
+      <strong><h1>Enes Ray </h1></strong>
+      <h2>Yazılım</h2>
+    </div>
+  </div>
+  <canvas class="background" width="1227" height="860" style="width: 100%; height: 100%;">
+  </canvas>
+</div>
+
+<!-- Hakkımda sayfası -->
+<div class="bilgi sayfasi" id="bilgi">
+  <div class="row">
+    <div class="container-fluid">
+      <div class="col-md-4">
+        <div class="profile">
+
+          <!-- Resim yüklenmezse alt komutu kullanılır -->
+          <center><img src="dosyalar/resim/proo.gif" id="portPic" alt="Resim Yüklenemedi" class="img-responsives
+            img-circle"></center>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="about-description">
+          <b><h3>Hakkımda</h3></b>
+          <hr>
+          <p>Merhaba! Ben Enes Ray Celal bayar üniversitinde bilgisayar programcılığı okumaktayım ve meslek lisesinde veritabanı bölümünden mezun oldum aktif olarak freelancer işler yapıyorum.
+            <br><br>
+            Hobilerim araştırma yapmak ve yazılım eğitimleri alıp kendimi geliştirmek.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bilgiler -->
+<div class="skills padding" id="yetenek">
+  <div class="container" style="font-family: 'Open Sans'">
+    <b><h3>Bilgilerim</h3></b>
+    <hr>
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <center><i class="contact-icon fa fa-gear fa-3x"></i>
+          <strong><h4>Programlama</h4></strong></center>
+        <ul>
+          <li>C#</li>
+          <li>Python</li>
+          <li>Java</li>
+        </ul>
+        <br>
+      </div>
+
+      <div class="col-md-4 col-sm-4">
+        <center><i class="contact-icon fa fa-window-maximize fa-3x"></i>
+          <strong><h4>Web</h4></strong></center>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>   
+          <li>PHP</li>
+		  <li>JavaScript</li>
+          </ul>
+        <br>
+      </div>
+
+      <div class="col-md-4 col-sm-4">
+        <center><i class="contact-icon fa fa-cloud fa-3x"></i>
+          <strong><h4>Diğer</h4></strong></center>
+        <ul>
+          <li>SQL</li>
+          <li>Android</li>
+          <li>Siber Güvenlik</li>
+          <li>Linux</li>
+        </ul>
+        <br>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- İletişim bilgileri için kodlar -->
+<div class="contact padding" id="iletisim">
+  <div class="container">
+    <b><h3>İletişim</h3></b>
+    <hr>
+    <div class="row">
+      <center>
+
+    
+
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="https://www.instagram.com/enesray0/" target="blank">
+            <i class="contact-icon fa fa-instagram fa-5x"></i>
+          </a>
+          <br>
+        </div>
+
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="mailto:iletisim.enesray@gmail.com" target="blank">
+            <i class="contact-icon fa fa-envelope fa-5x"></i>
+          </a>
+          <br>
+        </div>
+
+        <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="https://github.com/enesray0" target="blank">
+            <i class="contact-icon fa fa-github fa-5x"></i>
+          </a>
+          <br>
+        </div>
+
+          <div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="https://twitter.com/" target="blank">
+            <i class="contact-icon fa fa-twitter fa-5x"></i>
+          </a>
+          <br>
+        </div>
+		
+		<div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="https://tr.linkedin.com/in/enes-ray-6777a3139" target="blank">
+            <i class="contact-icon fa fa-linkedin fa-5x"></i>
+          </a>
+          <br>
+        </div>
+		
+		<div class="col-md-2 col-sm-2 col-xs-6">
+          <a href="https://youtube.com/enesray" target="blank">
+            <i class="contact-icon fa fa-youtube fa-5x"></i>
+          </a>
+          <br>
+        </div>
+      
+
+      </center>
+    </div>
+
+  </div>
+</div>
+
+<!--Alt sayfa bilgisi-->
+<div class="footer header">
+  <div class="container">
+    <footer><p>Enes Ray</p></footer>
+  </div>
+</div>
+
+<!-- jquery,bootstrap ve javascript'i içe aktarır-->
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
+<script src="dosyalar/js/particles.js"></script>
+<script src="dosyalar/js/main.js"></script>  
+</body>
+</html>
